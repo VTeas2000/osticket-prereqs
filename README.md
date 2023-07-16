@@ -36,14 +36,16 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p><img src="https://github.com/VTeas2000/osticket-prereqs/assets/60052902/fcf5cc21-45f5-422e-9012-6259b0e7595d" height="80%" width="80%" alt="VM Public IP"/></p>
 
 <p>
-Once you connect to your VM, accept your desired privacy settings if prompted and then enable the following through Windows Features:
+Once you connect to your VM, accept your desired privacy settings if prompted and then enable the following through <b>Windows Features</b>:
 <br>Internet Information Services->Web Management Tools->IIS Management Console
 <br>Internet Information Services->World Wide Web Services->Application Development Features->CGI
 <br>Internet Information Services->World Wide Web Services->Common HTTP Features
 </p>
-
 <p><img src="https://github.com/VTeas2000/osticket-prereqs/assets/60052902/2462a7f1-bad3-4f84-813c-e621bb4dd8d4" height="80%" width="80%" alt="Windows Features"/></p>
-<br />
+
+<p>The next step is to access the <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Files</a> on your VM.</p>
+<p>First, download and install <b>PHPManagerForIIS_V1.5.0.msi</b> and <b>rewrite_amd64_en-US.msi</b></p>
+<p>Then, download <b>php-7.3.8-nts-Win32-VC15-x86.zip</b> and unzip the contents into a new directory <b>C:\PHP</b></p>
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
