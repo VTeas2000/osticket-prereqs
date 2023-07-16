@@ -32,7 +32,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>Once your VM has been created, copy its public IP address.</p>
 <p><img src="https://github.com/VTeas2000/osticket-prereqs/assets/60052902/45a9d6b4-a286-4e6c-b74d-e5695568e7d7" height="80%" width="80%" alt="VM Public IP"/></p>
-<p>In Remote Desktop Connection, enter your VM's public IP and log in using the username and password you chosen while creating your VM. Connect even if you get a certificate error.</p>
+<p>In Remote Desktop Connection, enter your VM's public IP and log in using the username and password you chose while creating your VM. Connect even if you get a certificate error.</p>
 <p><img src="https://github.com/VTeas2000/osticket-prereqs/assets/60052902/fcf5cc21-45f5-422e-9012-6259b0e7595d" height="80%" width="80%" alt="VM Public IP"/></p>
 
 <p>
@@ -44,21 +44,8 @@ Once you connect to your VM, accept your desired privacy settings if prompted an
 <p><img src="https://github.com/VTeas2000/osticket-prereqs/assets/60052902/2462a7f1-bad3-4f84-813c-e621bb4dd8d4" height="80%" width="80%" alt="Windows Features"/></p>
 
 <p>The next step is to access the <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Files</a> on your VM.</p>
-<p>First, download and install <b>PHPManagerForIIS_V1.5.0.msi</b> and <b>rewrite_amd64_en-US.msi</b></p>
-<p>Then, download <b>php-7.3.8-nts-Win32-VC15-x86.zip</b> and unzip the contents into a new directory <b>C:\PHP</b></p>
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<p>First, download and install <b>PHPManagerForIIS_V1.5.0.msi</b> and <b>rewrite_amd64_en-US.msi</b>.</p>
+<p>Then, download <b>php-7.3.8-nts-Win32-VC15-x86.zip</b> and unzip the contents into a new directory <b>C:\PHP</b>.</p>
+<p>Download and install <b>VC_redist.x86.exe</b> and <b>mysql-5.5.62-win32.msi</b>.</p>
+<p>When installing MySQL 5.5.62:</p>
+<p>Typical Setup->Launch Configuration Wizard (after install)->Standard Configuration->Password1.</p>
