@@ -19,9 +19,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Microsoft Azure subscription
 - [Installation Files](https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
-- Item 3
-- Item 4
-- Item 5
 
 <h2>Installation Steps</h2>
 
@@ -49,3 +46,21 @@ Once you connect to your VM, accept your desired privacy settings if prompted an
 <p>Download and install <b>VC_redist.x86.exe</b> and <b>mysql-5.5.62-win32.msi</b>.</p>
 <p>When installing MySQL 5.5.62:</p>
 <p>Typical Setup->Launch Configuration Wizard (after install)->Standard Configuration->Install As Windows Service->Create Root Password.</p>
+<br>
+
+<p>Next, run IIS as an administrator.</p>
+<p>Open the PHP manager.</p>
+<p><img src="https://github.com/VTeas2000/osticket-prereqs/assets/60052902/076c0447-4b98-4d15-9f1f-dc0e37d5989e" height="80%" width="80%" alt="IIS"/></p>
+<p>Register a new PHP version.</p>
+<p><img src="https://github.com/VTeas2000/osticket-prereqs/assets/60052902/169da122-e23b-45ba-a6e3-44661f0fca44" height="80%" width="80%" alt="New PHP"/></p>
+<p><img src="https://github.com/VTeas2000/osticket-prereqs/assets/60052902/42c788d7-fd96-4dff-a25c-37002523f891" height="80%" width="80%" alt="New PHP"/></p>
+<p>To the right of the main IIS menu, either Restart or Stop and Start the server.</p>
+<br>
+
+<p>Next, download <b>osticket-v1.15.8.zip</b> from the <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Files</a>.</p>
+<p>Extract and copy “upload” folder to c:\inetpub\wwwroot.</p>
+<p>Within C:\inetpub\wwwroot, rename "upload" to "osTicket".</p>
+<br>
+
+<p>Close IIS and run it as an adminstrator again. On the left side, go to Sites->Default Web Site->osTicket. On the right side, click "Browse *:80 (http)".</p>
+<p><img src="https://github.com/VTeas2000/osticket-prereqs/assets/60052902/952faf93-ab5c-460b-93c6-3991c4e8240f" height="80%" width="80%" alt="IIS"/></p>
