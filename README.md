@@ -41,12 +41,11 @@ Once you connect to your VM, accept your desired privacy settings if prompted an
 <p><img src="https://github.com/VTeas2000/osticket-prereqs/assets/60052902/2462a7f1-bad3-4f84-813c-e621bb4dd8d4" height="80%" width="80%" alt="Windows Features"/></p>
 
 <p>The next step is to access the <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Files</a>.</p>
-<p>First, download and install <b>PHPManagerForIIS_V1.5.0.msi</b> and <b>rewrite_amd64_en-US.msi</b>.</p>
-<p>Then, download <b>php-7.3.8-nts-Win32-VC15-x86.zip</b> and unzip its contents into a new directory <b>C:\PHP</b>.</p>
-<p>Download and install <b>VC_redist.x86.exe</b> and <b>mysql-5.5.62-win32.msi</b>.</p>
+<p>First, download and install <b>PHPManagerForIIS_V1.5.0.msi</b> and <b>rewrite_amd64_en-US.msi</b></p>
+<p>Then, download <b>php-7.3.8-nts-Win32-VC15-x86.zip</b> and unzip its contents into a new directory <b>C:\PHP</b></p>
+<p>Download and install <b>VC_redist.x86.exe</b> and <b>mysql-5.5.62-win32.msi</b></p>
 <p>When installing MySQL 5.5.62:</p>
-<p>Typical Setup->Launch Configuration Wizard (after install)->Standard Configuration->Install As Windows Service->Create Root Password.</p>
-<br>
+<p>Typical Setup->Launch Configuration Wizard (after install)->Standard Configuration->Install As Windows Service->Create Root Password</p>
 
 <p>Next, run IIS as an administrator.</p>
 <p>Open the PHP manager.</p>
@@ -55,12 +54,52 @@ Once you connect to your VM, accept your desired privacy settings if prompted an
 <p><img src="https://github.com/VTeas2000/osticket-prereqs/assets/60052902/169da122-e23b-45ba-a6e3-44661f0fca44" height="80%" width="80%" alt="New PHP"/></p>
 <p><img src="https://github.com/VTeas2000/osticket-prereqs/assets/60052902/42c788d7-fd96-4dff-a25c-37002523f891" height="80%" width="80%" alt="New PHP"/></p>
 <p>To the right of the main IIS menu, either Restart or Stop and Start the server.</p>
-<br>
 
-<p>Next, download <b>osticket-v1.15.8.zip</b> from the <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Files</a>.</p>
-<p>Extract and copy “upload” folder to c:\inetpub\wwwroot.</p>
-<p>Within C:\inetpub\wwwroot, rename "upload" to "osTicket".</p>
-<br>
+<p>
+Next, download <b>osticket-v1.15.8.zip</b> from the <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Files</a>.
+<br>Extract and copy "upload" folder to C:\inetpub\wwwroot
+<br>Within C:\inetpub\wwwroot, rename "upload" to "osTicket"
+</p>
 
-<p>Close IIS and run it as an adminstrator again. On the left side, go to Sites->Default Web Site->osTicket. On the right side, click "Browse *:80 (http)".</p>
+<p>Close IIS and run it as an adminstrator again. On the left side, go to Sites->Default Web Site->osTicket. On the right side, click "Browse *:80 (http)"</p>
 <p><img src="https://github.com/VTeas2000/osticket-prereqs/assets/60052902/952faf93-ab5c-460b-93c6-3991c4e8240f" height="80%" width="80%" alt="IIS"/></p>
+
+<p>
+Not all of the extensions will be enabled. In IIS, Sites->Default Web Site->osTicket, open the PHP Manager.
+<br>Click "Enable or disable an extension"
+<br>Enable <b>php_imap.dll</b>
+<br>Enable <b>php_intl.dll</b>
+<br>Enable <b>php_opcache.dll</b>
+<br>Refresh the osTicket site in your browser and observe the changes.
+</p>
+
+<p>
+Go to C:\inetpub\wwwroot\osTicket\include\ and rename <b>ost-sampleconfig.php</b> to <b>ost-config.php</b>
+<br>Right-click <b>ost-config.php</b>, go to Properties->Security->Advanced->Disable inheritance->Remove all
+<br>Add->Select a principal->Everyone->Full control
+</p>
+
+<p>
+In the browser, click "Continue" to set up osTicket.
+<br>Fill out the System Settings and Admin User with your own values.
+</p>
+
+<p>
+Download and install HeidiSQL from the <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Files</a>.
+<br>Launch HeidiSQL. Create a new session, and input your username (root) and password that you created for MySQL. Click "Open". Create a database called "osTicket"
+</p>
+
+<p>
+Back in the browser, set the following for Database Settings:
+<br>MySQL Database: osTicket
+<br>MySQL Username: root
+<br>MySQL Password: <your password>
+Click "Install Now"
+</p>
+
+<p>
+Delete: C:\inetpub\wwwroot\osTicket\setup
+<br>For C:\inetpub\wwwroot\osTicket\include\ost-config.php, set permissions to "Read & execute" and "Read" only.
+</p>
+
+<p>You can log in using the admin user credentials you created at http://localhost/osTicket/scp/login.php</p>
