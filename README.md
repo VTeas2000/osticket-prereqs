@@ -102,4 +102,4 @@ Delete: C:\inetpub\wwwroot\osTicket\setup
 <br>For C:\inetpub\wwwroot\osTicket\include\ost-config.php, set permissions to "Read & execute" and "Read" only.
 </p>
 
-<p>You can log in using the admin user credentials you created at <a href="http://localhost/osTicket/scp/login.php"></p>
+<p>You can use the admin user credentials you created to log in at <a href="http://localhost/osTicket/scp/login.php">osTicket :: Agent Login</a></p>
