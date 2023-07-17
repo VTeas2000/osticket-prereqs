@@ -48,4 +48,4 @@ Once you connect to your VM, accept your desired privacy settings if prompted an
 <p>Then, download <b>php-7.3.8-nts-Win32-VC15-x86.zip</b> and unzip its contents into a new directory <b>C:\PHP</b>.</p>
 <p>Download and install <b>VC_redist.x86.exe</b> and <b>mysql-5.5.62-win32.msi</b>.</p>
 <p>When installing MySQL 5.5.62:</p>
-<p>Typical Setup->Launch Configuration Wizard (after install)->Standard Configuration->Password1.</p>
+<p>Typical Setup->Launch Configuration Wizard (after install)->Standard Configuration->Install As Windows Service->Create Root Password.</p>
