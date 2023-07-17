@@ -43,9 +43,9 @@ Once you connect to your VM, accept your desired privacy settings if prompted an
 </p>
 <p><img src="https://github.com/VTeas2000/osticket-prereqs/assets/60052902/2462a7f1-bad3-4f84-813c-e621bb4dd8d4" height="80%" width="80%" alt="Windows Features"/></p>
 
-<p>The next step is to access the <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Files</a> on your VM.</p>
+<p>The next step is to access the <a href="https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Files</a>.</p>
 <p>First, download and install <b>PHPManagerForIIS_V1.5.0.msi</b> and <b>rewrite_amd64_en-US.msi</b>.</p>
-<p>Then, download <b>php-7.3.8-nts-Win32-VC15-x86.zip</b> and unzip the contents into a new directory <b>C:\PHP</b>.</p>
+<p>Then, download <b>php-7.3.8-nts-Win32-VC15-x86.zip</b> and unzip its contents into a new directory <b>C:\PHP</b>.</p>
 <p>Download and install <b>VC_redist.x86.exe</b> and <b>mysql-5.5.62-win32.msi</b>.</p>
 <p>When installing MySQL 5.5.62:</p>
 <p>Typical Setup->Launch Configuration Wizard (after install)->Standard Configuration->Password1.</p>
