@@ -81,7 +81,7 @@ Go to C:\inetpub\wwwroot\osTicket\include\ and rename <b>ost-sampleconfig.php</b
 
 <p>
 In the browser, click "Continue" to set up osTicket.
-<br>Fill out the System Settings and Admin User with your own values.
+<br>Fill out the System Settings and Admin User with your own values. Keep them in mind.
 </p>
 
 <p>
